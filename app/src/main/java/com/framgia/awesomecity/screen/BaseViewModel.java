@@ -6,6 +6,8 @@ package com.framgia.awesomecity.screen;
 
 public interface BaseViewModel<T> {
     void onStart();
+
     void onStop();
+
     void setPresenter(T presenter);
 }

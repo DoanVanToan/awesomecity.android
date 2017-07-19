@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.framgia.awesomecity.screen.main.MainActivity"
     >
 
     <data>
-
         <variable
             name="viewModel"
             type="com.framgia.awesomecity.screen.main.MainActivityViewModel"
@@ -14,11 +13,28 @@
 
     </data>
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.framgia.awesomecity.screen.main.MainActivity"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
         >
 
-    </android.support.constraint.ConstraintLayout>
+        <com.framgia.awesomecity.utils.widget.StatusButton
+            android:id="@+id/status_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <FrameLayout
+            android:id="@+id/frame_table_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+
+    </LinearLayout>
 </layout>

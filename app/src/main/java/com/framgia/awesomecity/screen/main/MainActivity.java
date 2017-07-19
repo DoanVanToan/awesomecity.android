@@ -16,7 +16,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        removeTittleBar();
         mViewModel = new MainActivityViewModel();
 
         MainActivityContract.Presenter presenter = new MainActivityPresenter(mViewModel);
